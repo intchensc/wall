@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/personal/personal"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "墙墙自动姬",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor":"#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "投稿",
+        "iconPath":"./static/tg.png",
+        "selectedIconPath":"./static/tg1.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath":"./static/gr.png",
+        "selectedIconPath":"./static/gr1.png"
+      }
+    ]
+  }
+}

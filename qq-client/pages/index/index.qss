@@ -1,0 +1,19 @@
+
+.form{
+  width: 100%;
+  height: 500rpx;
+}
+textarea{
+  width: 90%;
+  height: 500rpx;
+  /* border: 2px solid black; */
+  margin:0 auto;
+}
+text{
+  color: #129edd, 
+}
+
+button{
+  border: 1px solid black;
+  margin:0 auto;
+}
