@@ -5,11 +5,25 @@ App({
     var logs = qq.getStorageSync('logs') || []
     logs.unshift(Date.now())
     qq.setStorageSync('logs', logs)
-
+    console.log(this.userInfo)
     // 登录
     qq.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log("登录代码:"+ res.code)
+        qq.request({
+          url: 'https://wallwal.mplan.site', // 仅为示例，并非真实的接口地址
+          data: {
+            x: '',
+            y: ''
+          },
+          header: {
+            'content-type': 'application/json' // 默认值
+          },
+          success(res) {
+            console.log(res.data)
+          }
+        })
       }
     })
 

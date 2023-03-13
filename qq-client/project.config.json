@@ -24,7 +24,11 @@
 	},
 	"qqappid": "1112206385",
 	"projectname": "%E5%A2%99%E5%A2%99%E8%87%AA%E5%8A%A8%E5%A7%AC",
-	"scripts": {},
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
 	"condition": {
 		"search": {
 			"current": -1,
