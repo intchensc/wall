@@ -1,0 +1,54 @@
+{{define "login/login.html"}}
+{{template "layout/header.html" .}}
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="layui-col-sm6 layui-col-sm-offset3" style="text-align: center">
+            <img src="../../static/image/touxiang.jpg" height="100px" width="100px">
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-col-sm6 layui-col-sm-offset3">
+            <form class="layui-form" action="http://localhost:9090/login" method="post">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">输入框</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">密码框</label>
+                    <div class="layui-input-inline">
+                        <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">单选框</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="isadmin" value="0" title="普通用户" checked="">
+                        <input type="radio" name="isadmin" value="1" title="管理员">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">登录</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{template "layout/footer.html"}}
+<script>
+    //Demo
+    layui.use('form', function(){
+        var form = layui.form;
+        //提交
+        form.on('submit(formDemo)', function(data){
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+    });
+</script>
+{{end}}

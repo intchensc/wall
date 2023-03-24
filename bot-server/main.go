@@ -27,7 +27,7 @@ type shuoshuo struct {
 
 func main() {
 
-	opqBot := OPQBot.NewBotManager(3386013275, "")
+	opqBot := OPQBot.NewBotManager(3386013275, "http://103.151.216.31:5678")
 
 	err := opqBot.Start()
 	if err != nil {
