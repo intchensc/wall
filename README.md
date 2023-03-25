@@ -5,6 +5,6 @@
 - qq-admin:后台管理系统
 
 ## 贡献者
-<a href="https://github.com/eryajf/learn-github/graphs/contributors">
+<a href="https://github.com/intchensc/wall/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=intchensc/wall" />
 </a>
